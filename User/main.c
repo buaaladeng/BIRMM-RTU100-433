@@ -351,7 +351,7 @@ int main( void )
 	SendDataToServ(STARTUPREQUEST,NULL,0,Usart3_send_buff, DeviceID);  //开机上报信息
   //DeviceStartupRequest(Usart3_send_buff, DeviceID, NodeAddr);      //开机上报信息
 	Delay_ms(500);  
-  
+  Test_SendToServ(DeviceID);                                                  //测试接口
 	while(1)
   {
  
